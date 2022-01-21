@@ -1,0 +1,130 @@
+/* must declare 0 margins on everything, also for main layout components use padding, not 
+vertical margins (top and bottom) to add spacing, else those margins get added to total height 
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+* {margin:0;padding:0;} 
+
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;
+   width: 80%;margin:auto;
+}
+
+#main {overflow:auto;
+	padding-bottom: 100px;
+background-color:#ffffff;
+width:70%;
+float:left;
+}  /* must be same height as the footer */
+
+#tweetBox {overflow:auto;
+	padding-bottom: 100px;
+background-color:#FFFFFF;
+width:30%;
+float:right;
+}  /* must be same height as the footer */
+
+#followUsBox {overflow:auto;
+	padding-bottom: 10px;
+        background-color:#FFFFFF;
+}  /* must be same height as the footer */
+
+#footer {position: relative;
+	margin-top: -100px; /* negative value of footer height */
+	height: 100px;
+	clear:both;
+} 
+
+/* Header */
+#head { }
+
+th.paddingLogo{
+       padding-left:150px;
+}
+
+th.nav{
+       padding-top:100px;
+       padding-left:180px;
+       font-size:40px;
+}
+
+/* Follow Us Box */
+/* Follow Logos */
+img.follow{
+width:60px;
+height:60px;
+border-width:0px;
+}
+
+/* Title */
+.titlePadding{padding-top:15px; padding-left:25px}
+
+/* ~END~ Follow Us Box*/ 
+
+/* Pixel Collisions Logo */
+img.logo{
+width:303px;
+height:152px;
+padding-top:25px;
+border-width:0px;
+}
+
+#nav:link{
+color:#000000;    /* unvisited link */
+text-decoration:none;
+}
+
+#nav:visited{
+color:#000000;    /* unvisited link */
+text-decoration:none;
+}
+
+#nav:hover{
+color:#C0C0C0;    /* unvisited link */
+text-decoration:none;
+}
+
+#nav:active{
+color:#000000;    /* unvisited link */
+text-decoration:none;
+}
+
+.navRightPadding{padding-right:25px;}
+.navLeftPadding{padding-left:25px;}
+
+#blogTitle {font-size:20px; bold}
+
+#foot #left {width:400px;float:left;padding-top:10px}
+#foot #right {width:400px;float:right;text-align:right;padding-top:10px}
+
+#centerNav{
+text-align:center;
+font-size:30px;
+}
+
+.center {text-align:center; padding-top:35px}
+.right {text-align:right;}
+
+img.imgLeft
+{
+   float:left;
+   padding-right: 10px;
+}
+
+img.badge
+{
+   margin-top: 5px;
+   border-width: 0px;
+}
+
+/* Opera Error Fix */
+body:before 
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;
+}
+
+
+
